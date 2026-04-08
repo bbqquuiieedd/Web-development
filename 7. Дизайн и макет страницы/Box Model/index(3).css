@@ -1,0 +1,21 @@
+.custom-box-2 {
+  border: 2px solid #FFA310;
+  padding: 10px;
+  margin: 10px;
+  color: #FFFFFF;
+}
+
+.custom-box-1 {
+  border: 2px solid #FFA310;
+  padding: 10px;
+  color: #FFFFFF;
+}
+
+.default-box {
+  border: 2px solid #FFA310;
+  color: #FFFFFF;
+}
+
+body {
+  background-color: #0C1527;
+}

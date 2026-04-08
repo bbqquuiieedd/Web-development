@@ -1,0 +1,19 @@
+#grandparent {
+    position: relative;
+    width: 250px;
+    height: 150px;
+    border: 1px solid;
+}
+
+#parent {
+    width: 150px;
+    height: 100px;
+    border: 1px solid blue;
+    margin: 40px 20px;
+}
+
+#child {
+    position: absolute;
+    left: 150px;
+    top: 110px;
+}

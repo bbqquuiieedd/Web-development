@@ -1,0 +1,13 @@
+div {
+  width: 80%;
+  margin: 10px 0px;
+  border: 1px solid #747171;
+  text-align: center;
+}
+
+.special {
+  background-color: #FFD700;
+  position: relative;
+  /*сдвиг слева*/
+  left: 20px;
+}

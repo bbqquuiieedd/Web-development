@@ -1,0 +1,23 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F3F4F6;
+  color: #333;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+/* light gray for odd rows */
+tr:nth-child(odd) {
+  background-color: #E9E9E9;
+}
+
+/* white for even rows */
+tr:nth-child(even) {
+  background-color: #FFFFFF;
+}
+
+th, td {
+  border: 2px solid #909092;
+}

@@ -1,0 +1,9 @@
+.parent {
+  font-size: 20px;
+  background-color: #98FB98;
+}
+
+.child {
+  font-size: 50%;
+  background-color: #FFD700;
+}

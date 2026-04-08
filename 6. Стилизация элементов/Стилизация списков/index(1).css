@@ -1,0 +1,19 @@
+.top-selling {
+  list-style-type: decimal-leading-zero;
+}
+.classic {
+  list-style-type: decimal;
+}
+.biographies {
+  list-style-type: lower-roman;
+}
+.fantasy {
+  list-style-type: upper-roman;
+}
+h1, h2 {
+  background-color: #FFA055;
+  text-align: center;
+}
+li {
+  font-size: 18px;
+}

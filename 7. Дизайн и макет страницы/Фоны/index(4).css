@@ -1,0 +1,18 @@
+#container1 {
+    background-image: url('https://sololearnassets.azureedge.net/s1-logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+#container2 {
+    background-image: url('https://sololearnassets.azureedge.net/s1-logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid black;
+}

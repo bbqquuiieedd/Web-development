@@ -1,0 +1,36 @@
+.serif-font {
+  /*Шрифты имеют декоративные 
+  штрихи или засечки.*/
+  font-family: serif;
+}
+
+.sans-serif-font {
+  /*В шрифтах отсутствуют 
+  декоративные штрихи.*/
+  font-family: sans-serif;
+}
+
+.monospace-font {
+  /*Шрифты имеют одинаковый 
+  интервал между символами.*/
+  font-family: monospace;
+}
+
+.cursive-font {
+  /*Шрифты имитируют почерк для 
+  придания персонального или 
+  художественного штриха.*/
+  font-family: cursive;
+}
+
+fantasy-font {
+  /*Декоративные или уникальные шрифты, 
+  которые не подходят ни в одну 
+  другую категорию.*/
+  font-family: fantasy;
+}
+
+body {
+  background-color: #0C1527;
+  color: #FFFFFF;
+}

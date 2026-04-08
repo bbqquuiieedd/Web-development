@@ -1,0 +1,29 @@
+body {
+  background-color: #0C1527;
+}
+
+input[type="text"], input[type="email"] {
+  border: 1px solid #FF9E03;
+  background-color: #172338;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+input[type="button"] {
+  background-color: #149EF2;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  color: white;
+}
+
+input[type="button"]:hover {
+  background-color: #0C1527;
+  border: 1px solid #FF9E03;
+  border-radius: 10px;
+}
+
+label {
+  font-weight: bold;
+  color: #FF9E03;
+}

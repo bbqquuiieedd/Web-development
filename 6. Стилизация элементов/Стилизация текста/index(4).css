@@ -1,0 +1,9 @@
+body {
+  background-color: #1a1a1a;
+}
+
+h1 {
+  color: #FFFFFF; /* white colored text */
+  text-shadow: 4px 4px 4px #4296CE;
+  font-size: 4rem;
+}

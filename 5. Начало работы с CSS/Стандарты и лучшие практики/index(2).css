@@ -1,0 +1,13 @@
+.heading {
+  font-size: large;
+  color: blueviolet;
+}
+
+.description {
+  font-size: medium;
+  color: firebrick;
+}
+
+button {
+  background-color: burlywood;
+}

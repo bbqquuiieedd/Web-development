@@ -1,0 +1,23 @@
+body {
+  background-color: #333333;
+}
+
+h1 {
+  text-decoration: underline;
+  color: #F28035;
+}
+
+h2 {
+  text-decoration: overline;
+  color: #6BBE92;
+}
+
+h3 {
+  text-decoration: line-through;
+  color: #D83367;
+}
+
+h4 {
+  text-decoration: underline overline;
+  color: #149EF2;
+}

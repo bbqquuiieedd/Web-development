@@ -1,0 +1,27 @@
+div {
+  padding: 20px;
+  border: 1px solid rgb(189, 185, 185);
+  box-shadow: 2px 4px #000000;
+  display: flex;
+}
+
+#item1 {
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+#item2 {
+  flex-shrink: 2;
+  flex-grow: 1;
+}
+
+p {
+  border: 1px solid rgb(189, 185, 185);
+  box-shadow: 0 2px 4px #000000;
+  background-color: rgb(247, 228, 203);
+  margin: 5px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}

@@ -1,0 +1,13 @@
+body {
+  background-color: #0C1527;
+}
+
+input[type="text"] {
+  border: 1px solid #FF9E03;
+  background-color: #172338;
+}
+
+label {
+  font-weight: bold;
+  color: #FF9E03;
+}

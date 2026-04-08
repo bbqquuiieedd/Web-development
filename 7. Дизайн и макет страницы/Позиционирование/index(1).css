@@ -1,0 +1,16 @@
+/* Default static position */
+#item1 {
+  background-color: #0000FF;
+  height: 100px;
+  width: 300px;
+}
+
+/* Absolute positioning */
+#item2 {
+  position: absolute;
+  left: 50px;
+  top: 40px;
+  background-color: #FF0000;
+  height: 100px;
+  width: 300px;
+}

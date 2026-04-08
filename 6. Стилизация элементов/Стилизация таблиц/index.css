@@ -1,0 +1,20 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F7F8FC;
+}
+/* Применение рамки вокруг таблицы */
+#table1 {
+  border: 2px solid #0C1527;
+}
+/* Применение границ к каждой ячейке */
+#table2 th,
+#table2 td {
+  border: 2px solid #0C1527;
+}
+td {
+  text-align: left;
+}
+th {
+  text-align: left;
+  background-color: #149EF2;
+}

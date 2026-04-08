@@ -1,0 +1,18 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F3F4F6;
+  color: #333;
+}
+
+tr:nth-child(3) {
+  background-color: #FFA310;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 2px solid #909092;
+  /* padding и text-align обычно добавляются здесь для красоты */
+}

@@ -1,0 +1,26 @@
+.trends {
+  list-style-type: square;
+}
+
+.most-watched {
+  list-style-type: circle;
+}
+
+.new-arrivals {
+  list-style-type: disc;
+}
+
+.classics {
+  list-style-type: none;
+}
+
+body {
+  background-color: #232323;
+  color: #FFFFFF;
+  font-size: 18px;
+}
+
+h2 {
+  color: #B8A72D;
+  text-align: center;
+}

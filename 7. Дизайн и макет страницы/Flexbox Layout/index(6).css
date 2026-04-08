@@ -1,0 +1,10 @@
+#container {
+  display: flex;
+  border: 1px solid black;
+}
+
+.item {
+  flex-grow: 0;
+  border: 1px solid green;
+  margin-right: 2px;
+}

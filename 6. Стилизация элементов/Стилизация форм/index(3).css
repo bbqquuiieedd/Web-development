@@ -1,0 +1,27 @@
+body {
+  background-color: #0C1527;
+}
+
+input[type="text"], input[type="email"] {
+  border: 1px solid #FF9E03;
+  background-color: #172338;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-radius: 10px; /* Скругление углов полей ввода */
+}
+
+input[type="submit"] {
+  background-color: #149EF2; /* Синий цвет кнопки */
+  border-radius: 15px;       /* Скругление углов кнопки */
+  border: none;              /* Убираем рамку у кнопки */
+  font-weight: bold;
+  color: white;
+  width: 70px;
+  height: 40px;
+  font-size: 18px;
+}
+
+label {
+  font-weight: bold;
+  color: #FF9E03;
+}

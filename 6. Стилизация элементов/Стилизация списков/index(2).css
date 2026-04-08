@@ -1,0 +1,22 @@
+/* places the marker within the text
+area, inside the item element */
+#list-inside {
+  list-style-position: inside;
+}
+
+/* places the marker outside the text
+area, outside the item element */
+#list-outside {
+  list-style-position: outside;
+}
+
+p {
+  text-align: center;
+  background-color: #B538E7;
+  font-size: 26px;
+}
+
+li {
+  border: 2px solid #CCCCCC;
+  font-size: 18px;
+}

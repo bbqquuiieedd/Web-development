@@ -1,0 +1,22 @@
+/*некоторые веб-безопасные шрифты:
+Arial, Courier New, Times New Roman,
+Trebuchet MS, Verdana
+*/
+
+#font1 {
+  font-family: Georgia;
+}
+
+#font2 {
+  font-family: Tahoma;
+}
+
+#font3 {
+  font-family: Lucida Console;
+}
+
+#font4 {
+  font-family: "Comic Sans MS";
+}
+
+/* Вот еще веб-безопасные шрифты, которые вы можете попробовать: Arial, Courier New, Times New Roman, Trebuchet MS, Verdana */
