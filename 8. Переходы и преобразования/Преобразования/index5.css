@@ -1,0 +1,12 @@
+div {
+  width: 150px;
+  height: 150px;
+  background-color: #3498DB;
+  border-radius: 20px;
+  margin: 50px;
+}
+
+div:active {
+  transform: translate(100px, 150px)
+  rotate(70deg) scale(1.5);
+}

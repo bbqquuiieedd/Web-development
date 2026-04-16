@@ -1,0 +1,12 @@
+div:active {
+  /* вращает карту на 15 градусов при нажатии */
+  transform: rotate(15deg);
+}
+
+div {
+  width: 150px;
+  height: 150px;
+  background-color: #3498DB;
+  border-radius: 20px;
+  margin: 40px;
+}

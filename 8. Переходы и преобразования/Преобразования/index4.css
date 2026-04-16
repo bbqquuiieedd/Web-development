@@ -1,0 +1,23 @@
+.card:active {
+  transform: rotate(30deg);
+  /*устанавливает точку в верхнем левом углу*/
+  transform-origin: top left;
+}
+
+.card {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: #3498DB;
+  border-radius: 20px;
+  margin-left: 81px;
+  margin-top: 1px;
+  z-index: 10;
+}
+
+.empty {
+    height: 150px;
+    width: 150px;
+    margin: 80px;
+    border: 1px solid black;
+}

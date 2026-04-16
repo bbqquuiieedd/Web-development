@@ -1,0 +1,11 @@
+#card {
+  width: 150px;
+  height: 150px;
+  background-color: #3498DB;
+  margin: 80px;
+  z-index: 10;
+}
+
+#card:active {
+  transform: translate(-25px, 50px);
+}
