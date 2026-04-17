@@ -1,0 +1,35 @@
+/* Тело */
+body {
+    /* Шрифт */
+    /* sans-serif - без засечек */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Класс theme */
+/* заголовок нумерованного списка */
+.theme {
+    /* Внешний отступ справа */
+    margin-top: 1em;
+    /* Насыщенность шрифта */
+    font-weight: bold;
+}
+
+/* Ненумерованный список */
+ul {
+    /* Маркер */
+    list-style: none;
+    /* Внутренний отступ слева */
+    padding-left: 0;
+}
+
+/* Абзац ненумерованного списка */
+ul p {
+    /* Внешний отступ */
+    margin: 0px;
+}
+
+/* Гиперссылка */
+a {
+    /* Декорация */
+    text-decoration: none;
+}
