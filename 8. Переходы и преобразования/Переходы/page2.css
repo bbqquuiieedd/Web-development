@@ -1,0 +1,13 @@
+#box {
+  width: 100px;
+  height: 100px;
+  background-color: #4169E1;
+  transition: width 1s, height 1s,
+  background-color 1s;
+}
+
+#box:active {
+  width: 150px;
+  height: 150px;
+  background-color: #DC143C;
+}

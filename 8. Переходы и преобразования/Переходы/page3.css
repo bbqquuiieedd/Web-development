@@ -1,0 +1,12 @@
+#element {
+  width: 100px;
+  background-color: blue;
+  color: white;
+  transition: width 2s, background-color 1s;
+  transition-delay: 2s;
+}
+
+#element:active {
+  width: 200px;
+  background-color: red;
+}

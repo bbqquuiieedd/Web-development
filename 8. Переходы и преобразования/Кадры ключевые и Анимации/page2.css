@@ -1,0 +1,31 @@
+div {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  margin: 50px;
+  animation-name: snakeMove;
+  animation-duration: 5s;
+}
+
+@keyframes snakeMove {
+  0% {
+    background-color: #7B41EA;
+    bottom: 0;
+    left: 0;
+  }
+  33% {
+    background-color: #CCB4FB;
+    bottom: 40px;
+    left: 40px;
+  }
+  66% {
+    background-color: #C833FD;
+    bottom: 0;
+    left: 80px;
+  }
+  100% {
+    background-color: #F91583;
+    bottom: 40px;
+    left: 120px;
+  }
+}

@@ -1,0 +1,18 @@
+div {
+  padding: 30px;
+  border-radius: 50%;
+  width: 50px;
+  background-color: #007BFF;
+  color: white;
+  animation-name: colorChange;
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+
+@keyframes colorChange {
+  0% {background-color: #007BFF;}
+  25% {background-color: #FFC107;}
+  50% {background-color: #28A745;}
+  75% {background-color: #DC3545;}
+  100% {background-color: #6610F2;}
+}

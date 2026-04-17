@@ -1,0 +1,14 @@
+div {
+  padding: 30px;
+  border-radius: 50%;
+  width: 50px;
+  background-color: #007BFF;
+  color: white;
+  animation-name: colorChange;
+  animation-duration: 4s;
+}
+
+@keyframes colorChange {
+  from { background-color: #007BFF;}
+  to { background-color: #F2106E;}
+}
