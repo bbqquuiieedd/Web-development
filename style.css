@@ -5,9 +5,9 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Класс theme */
+/* Класс module */
 /* заголовок нумерованного списка */
-.theme {
+.module {
     /* Внешний отступ справа */
     margin-top: 1em;
     /* Насыщенность шрифта */
