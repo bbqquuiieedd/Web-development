@@ -1,0 +1,28 @@
+<head>
+    <link rel="stylesheet" href="page3.css">
+</head>
+<body>
+  <h2>Registration Form</h2>
+  
+  <form id="myForm">
+    <label for="name">Enter email:</label>
+    <input type="text" id="email" name="email"></br></br>
+    <label for="age">Enter password:</label>
+    <input type="password" id="pass" name="pass"></br></br>
+    <input type="checkbox" id="subscribe" name="subscribe">
+    <label for="subscribe">Subscribe to our newsletter</label><br><br>
+    <input type="submit" onclick="processFormData()">
+  </form>
+  
+  <div id="table">
+  <h2>Database Simulation</h2>
+    <table id="dataTable">
+      <tr>
+        <th>email</th>
+        <th>password</th>
+        <th>isSubscribed</th>
+      </tr>
+    </table>
+  </div>
+  <script src="page3.js"></script>
+</body>
