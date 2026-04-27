@@ -1,0 +1,31 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  background-color: #F3F3F3;
+}
+
+h2 {
+  color: #4A7C59;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+#price {
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+button {
+  background-color: #4A7C59;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+}
