@@ -1,3 +1,9 @@
+/* Файл HTML */
+html {
+    /* Плавная прокрутка */
+    scroll-behavior: smooth;
+}
+
 /* Тело */
 body {
     /* Шрифт */
@@ -32,4 +38,63 @@ ul p {
 a {
     /* Декорация */
     text-decoration: none;
+}
+
+.upArrow {
+  width: 15px;
+  height: 15px;
+  border: 3px solid white;
+  border-right: 0;
+  border-bottom: 0;
+  /*
+  transform: rotate(45deg);
+  */
+}
+
+/* Кнопка поднятия наверх страницы */
+.scrollTopButton {
+    /* Позиционирование */
+    position: fixed;
+    /* Отступ снизу */
+    bottom: 20px; 
+    /* Отступ справа */
+    right: 20px;
+    /* Ширина */
+    width: 50px;
+    /* Высота */
+    height: 50px;
+    /* Радиус границы */
+    /* круглая граница */
+    border-radius: 50%;
+    /* Задний фон */
+    background: #2563eb; /* Основной цвет, поменяйте под свой дизайн */
+    /* Цвет */
+    color: #fff;
+    /* Граница */
+    border: none;
+    /* Курсор */
+    cursor: pointer;
+    /* Размер */
+    font-size: 24px;
+    /* отображение */
+    display: flex;
+    /* Позиционирование по вертикали */
+    align-items: center;
+    /* Позиционирование по горизонтали */
+    justify-content: center;
+    /* Прозрачность в неактивном состоянии  */
+    opacity: 0;
+    /* Скрывает от кликов, когда невидима */
+    pointer-events: none; 
+    /* Переход */
+    transition: opacity 0.25s;
+}
+
+/* Кнопка поднятия наверх страницы */
+/* когда видна */
+.scrollTopButton.show {
+    /* Прозрачность в активном состоянии */
+    opacity: 1;
+    /* События */
+    pointer-events: auto;
 }
