@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const button = document.getElementById('scrollTopButton');
-    const threshold = 300; // Кнопка появится после прокрутки в заданное количество px
+    const threshold = 0; // Кнопка появится после прокрутки в заданное количество px
 
     window.addEventListener('scroll', () => {
         if (window.scrollY > threshold) {
