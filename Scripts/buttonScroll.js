@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', () => {
         if (window.scrollY > threshold) {
             button.classList.add('show');
-        } else {
+        } 
+        else {
             button.classList.remove('show');
         }
     });
@@ -14,3 +15,4 @@ document.addEventListener('DOMContentLoaded', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 });
+

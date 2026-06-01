@@ -1,3 +1,15 @@
+:root {
+    /* Цвет заднего фона */
+    --background-color: rgb(255, 255, 255);
+    /* Цвет текста */
+    --text-color: rgb(0, 0, 0);
+}
+
+.dark-theme {
+  --background-color: rgb(18, 18, 18);
+  --text-color: rgb(224, 224, 224);
+}
+
 /* Файл HTML */
 html {
     /* Плавная прокрутка */
@@ -9,6 +21,10 @@ body {
     /* Шрифт */
     /* sans-serif - без засечек */
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Цвет заднего фона */
+    background-color: var(--background-color);
+    /* Цвет текста */
+    color: var(--text-color);
 }
 
 /* Класс module */
@@ -67,7 +83,7 @@ a {
     /* круглая граница */
     border-radius: 50%;
     /* Задний фон */
-    background: #2563eb; /* Основной цвет, поменяйте под свой дизайн */
+    background: rgb(32, 96, 256); /* Основной цвет, поменяйте под свой дизайн */
     /* Цвет */
     color: #fff;
     /* Граница */
@@ -87,7 +103,11 @@ a {
     /* Скрывает от кликов, когда невидима */
     pointer-events: none; 
     /* Переход */
-    transition: opacity 0.25s;
+    transition: opacity 0.25s, transform 0.25s, background 0.25s;
+}
+
+.scrollTopButton:hover {
+    background: rgb(32, 64, 240);
 }
 
 /* Кнопка поднятия наверх страницы */
@@ -97,4 +117,18 @@ a {
     opacity: 1;
     /* События */
     pointer-events: auto;
+    transform: translateY(0);
+}
+
+.scrollTopButton:not(.show) {
+    transform: translateY(70px);
+}
+
+.theme-btn {
+    background: none;
+    border: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 16px;
 }
