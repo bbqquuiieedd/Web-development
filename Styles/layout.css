@@ -1,0 +1,61 @@
+/* Файл HTML */
+html {
+    /* Прокрутка: плавная */
+    scroll-behavior: smooth;
+}
+
+/* Тело */
+body { 
+    /* Шрифт: sans-serif - без засечек */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Цвет заднего фона */
+    background-color: var(--background-color);
+    /* Цвет текста */
+    color: var(--text-color);
+    /* Анимация */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Модули или же заголовок нумерованного списка на странице */
+ol > li {
+    /* Внешний отступ справа */
+    margin-top: 1em;
+    /* Насыщенность шрифта */
+    font-weight: bold;
+}
+
+/* Ненумерованный список */
+ul {
+    /* Маркер */
+    list-style: none;
+    /* Внутренний отступ слева */
+    padding-left: 0;
+}
+
+/* Абзац ненумерованного списка */
+ul p {
+    /* Внешний отступ */
+    margin: 0px;
+}
+
+/* Гиперссылка */
+a {
+    /* Цвет текста */
+    color: var(--link-color);
+    /* Декорация */
+    text-decoration: none;
+    /* Анимация */
+    transition: color 0.2s ease;
+}
+
+/* Гиперссылка при наведении */
+a:hover {
+    /* Цвет */
+    color: var(--link-hover-color);
+}
+
+/* Посещённая гиперссылка */
+a:visited {
+    /* Цвет */
+    color: var(--link-visited-color);
+}

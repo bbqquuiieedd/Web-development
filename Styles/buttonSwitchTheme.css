@@ -1,0 +1,64 @@
+:root {
+    --background-color: rgb(255, 255, 255);
+    --text-color: rgb(0, 0, 0);
+    --icon-color: rgb(0, 0, 0);
+    --link-color: #0066cc;
+    --link-hover-color: #004499;
+    --link-visited-color: #551a8b;
+}
+
+.themeDark {
+    --background-color: rgb(18, 18, 18);
+    --text-color: rgb(224, 224, 224);
+    --icon-color: rgb(255, 255, 255);
+    --link-color: #66b0ff;
+    --link-hover-color: #99ccff;
+    --link-visited-color: #c58af9;
+}
+
+/* Плавные переходы для всех элементов */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+    transition: color 0.2s ease;
+}
+
+/* Кнопка переключения темы */
+#buttonSwitchTheme {
+    border: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(128, 128, 128, 0.2);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+    transition: transform 0.1s, background 0.2s;
+}
+
+#buttonSwitchTheme:hover {
+    transform: scale(1.1);
+}
+
+#buttonSwitchTheme:active {
+    transform: scale(0.9);
+}
+
+/* Иконка внутри кнопки */
+#buttonSwitchTheme svg {
+    width: 26px;
+    height: 26px;
+    stroke: var(--icon-color);
+    stroke-width: 2;
+    fill: none;
+    display: block;
+    transition: stroke 0.2s ease;
+}

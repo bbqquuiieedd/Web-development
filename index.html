@@ -3,17 +3,23 @@
     <!-- Название страницы -->
     <title>Изучение Web</title>
     <!-- Иконка страницы -->
-    <link rel="icon" href="icon.jpg">
-    <!-- Подключение внешнего CSS для главной страницы -->
-    <link rel="stylesheet" href="Styles/style.css">
-    <!-- Подключение внешнего JS: Кнопка прокрутки-->
-    <script src="Scripts/buttonScroll.js"></script>
+    <link rel="icon" href="icon.png">
+    <!-- Подключение внешнего CSS: расположение для главной страницы -->
+    <link rel="stylesheet" href="Styles/layout.css">
+    <!-- Подключение внешнего CSS: кнопка изменения темы -->
+    <link rel="stylesheet" href="Styles/buttonSwitchTheme.css">
+    <!-- Подключение внешнего CSS: кнопка поднятия наверх страницы -->
+    <link rel="stylesheet" href="Styles/buttonScrollToTop.css">
+    <!-- Подключение внешнего JS: Кнопка переключения темы -->
+    <script src="Scripts/buttonSwitchTheme.js"></script>
+    <!-- Подключение внешнего JS: Кнопка прокрутки -->
+    <script src="Scripts/buttonScrollToTop.js"></script>
   </head>
   <body>
-    <button id="theme-toggle" class="theme-btn">Сменить тему</button>
+    <!-- Кнопка изменения темы -->
+    <button id="buttonSwitchTheme"></button>
     <ol>
-      <!-- 1. -->
-      <li class="module">Начало работы</li>
+      <li>Начало работы</li>
         <ul>
           <li>
             <p>HTML-код:
@@ -37,8 +43,7 @@
             </p>
           </li>
         </ul>
-      <!-- 2. -->
-      <li class="module">Углубление</li>
+      <li>Углубление</li>
         <ul>
           <li>
             <p>Гипертекст:
@@ -74,8 +79,7 @@
             </p>
           </li>
         </ul>
-      <!-- 3. -->
-      <li class="module">Использование атрибутов</li>
+      <li>Использование атрибутов</li>
         <ul>
           <li>
             <p>Атрибуты:
@@ -114,8 +118,7 @@
             </p>
           </li>
         </ul>
-      <!-- 4. -->
-      <li class="module">Освоение HTML</li>
+      <li>Освоение HTML</li>
         <ul>
           <li>
             <p>Атрибут Style:
@@ -171,8 +174,7 @@
             </p>
           </li>
         </ul>
-      <!-- 5. -->
-      <li class="module">Начало работы с CSS</li>
+      <li>Начало работы с CSS</li>
         <ul>
           <li>
             <p>ID и Class Selectors:
@@ -213,8 +215,7 @@
             </p>
           </li>
         </ul>
-      <!-- 6. -->
-      <li class="module">Стилизация элементов</li>
+      <li>Стилизация элементов</li>
         <ul>
           <li>
             <p>Введение в цвет:
@@ -279,8 +280,7 @@
             </p>
           </li>
         </ul>
-      <!-- 7. -->
-      <li class="module">Дизайн и макет страницы</li>
+      <li>Дизайн и макет страницы</li>
         <ul>
           <li>
             <p>Box Model:
@@ -323,8 +323,7 @@
             </p>
           </li>
         </ul>
-      <!-- 8. -->
-      <li class="module">Переходы и преобразования</li>
+      <li>Переходы и преобразования</li>
         <ul>
           <li>
             <p>Преобразования:
@@ -362,8 +361,7 @@
             </p>
           </li>
         </ul>
-      <!-- 9. -->
-      <li class="module">Добро пожаловать в JavaScript</li>
+      <li>Добро пожаловать в JavaScript</li>
       <ul>
         <li>
           <p>Добро пожаловать в JavaScript:
@@ -406,8 +404,7 @@
           </p>
         </li>
       </ul>
-      <!-- 10. -->
-      <li class="module">Углубляемся в JavaScript</li>
+      <li>Углубляемся в JavaScript</li>
       <ul>
         <li>
           <p>Функции JavaScript:
@@ -441,8 +438,7 @@
           </p>
         </li>
       </ul>
-      <!-- 11. -->
-      <li class="module">Работа с данными</li>
+      <li>Работа с данными</li>
       <ul>
         <li>
           <p>Операции сравнения:
@@ -481,8 +477,7 @@
           </p>
         </li>
       </ul>
-      <!-- 12. -->
-      <li class="module">Контроль потока</li>
+      <li>Контроль потока</li>
       <ul>
         <li>
           <p>Условные выражения:
@@ -525,44 +520,12 @@
         </li>
     </ol>
     <!-- Кнопка поднятия наверх страницы -->
-    <button id="scrollTopButton" class="scrollTopButton">
-      <!-- Холст -->
+    <button id="buttonScrollToTop">
+      <!-- Холст: нарисованная стрелочка -->
       <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round">
         <!-- Команды рисования -->
         <path d="M12 19V5M5 12l7-7 7 7"/>
       </svg>
     </button>
-    <!-- Вставь это ПЕРЕД закрывающим </body> -->
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-    const toggleBtn = document.getElementById('theme-toggle');
-    const body = document.body;
-
-    // Если кнопки нет на странице — выходим, чтобы не было ошибки
-    if (!toggleBtn) return;
-
-    // 1. Проверяем сохранённую тему
-    const currentTheme = localStorage.getItem('theme');
-    if (currentTheme === 'dark') {
-        body.classList.add('dark-theme');
-        toggleBtn.textContent = '☀️';
-    } else {
-        toggleBtn.textContent = '🌓';
-    }
-
-    // 2. Обработка клика
-    toggleBtn.addEventListener('click', () => {
-        body.classList.toggle('dark-theme');
-
-        if (body.classList.contains('dark-theme')) {
-            localStorage.setItem('theme', 'dark');
-            toggleBtn.textContent = '☀️';
-        } else {
-            localStorage.setItem('theme', 'light');
-            toggleBtn.textContent = '🌓';
-        }
-    });
-});
-</script>
   </body>
 </html>

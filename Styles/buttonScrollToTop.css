@@ -1,0 +1,60 @@
+/* Кнопка поднятия наверх страницы */
+#buttonScrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgb(32, 96, 256);
+    border: none;
+    cursor: pointer;
+    /* Центрирование содержимого */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Сброс отступов, которые могли мешать */
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    box-sizing: border-box;
+    /* Прозрачность и анимация */
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s, transform 0.25s, background 0.25s;
+    transform-origin: center;
+}
+
+/* Видимое состояние */
+#buttonScrollToTop.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+/* Увеличение при наведении */
+#buttonScrollToTop.show:hover {
+    transform: scale(1.1);
+    transform-origin: center center;
+    backface-visibility: hidden;
+}
+
+#buttonScrollToTop.show:active {
+    transform: scale(0.9);
+}
+
+/* Цвет фона при наведении */
+#buttonScrollToTop:hover {
+    background: rgb(32, 64, 240);
+}
+
+/* Стили для SVG внутри кнопки */
+#buttonScrollToTop svg {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    /* Иконка не должна масштабироваться отдельно */
+    transition: none;
+}
