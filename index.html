@@ -1,23 +1,25 @@
-<html>
+<!DOCTYPE html>
+<html lang="ru">
   <head>
-    <!-- Название страницы -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Изучение Web</title>
-    <!-- Иконка страницы -->
     <link rel="icon" href="icon.png">
-    <!-- Подключение внешнего CSS: расположение для главной страницы -->
+    
+    <!-- Подключение CSS -->
     <link rel="stylesheet" href="Styles/layout.css">
-    <!-- Подключение внешнего CSS: кнопка изменения темы -->
     <link rel="stylesheet" href="Styles/buttonSwitchTheme.css">
-    <!-- Подключение внешнего CSS: кнопка поднятия наверх страницы -->
     <link rel="stylesheet" href="Styles/buttonScrollToTop.css">
-    <!-- Подключение внешнего JS: Кнопка переключения темы -->
+    
+    <!-- Подключение JS -->
     <script src="Scripts/buttonSwitchTheme.js"></script>
-    <!-- Подключение внешнего JS: Кнопка прокрутки -->
     <script src="Scripts/buttonScrollToTop.js"></script>
   </head>
   <body>
-    <!-- Кнопка изменения темы -->
-    <button id="buttonSwitchTheme"></button>
+    <!-- Кнопка переключения темы (солнце/луна) -->
+    <button id="buttonSwitchTheme" aria-label="Переключить тему"></button>
+    
+    <!-- Основной контент: навигация по урокам -->
     <ol>
       <li>Начало работы</li>
         <ul>
@@ -519,11 +521,14 @@
           </p>
         </li>
     </ol>
-    <!-- Кнопка поднятия наверх страницы -->
-    <button id="buttonScrollToTop">
-      <!-- Холст: нарисованная стрелочка -->
-      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.0" stroke-linecap="round" stroke-linejoin="round">
-        <!-- Команды рисования -->
+
+    <!-- Кнопка "Наверх" с SVG-стрелкой -->
+    <button id="buttonScrollToTop" aria-label="Наверх">
+      <!-- SVG: стрелка вверх -->
+      <!-- viewBox="0 0 24 24" - система координат 24x24 -->
+      <!-- path: M12 19V5 - линия от (12,19) до (12,5) вертикальная -->
+      <!-- M5 12l7-7 7 7 - стрелка: от (5,12) к (12,5) к (19,12) -->
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M12 19V5M5 12l7-7 7 7"/>
       </svg>
     </button>

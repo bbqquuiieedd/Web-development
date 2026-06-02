@@ -1,63 +1,43 @@
+// Ждём полной загрузки DOM
 document.addEventListener('DOMContentLoaded', () => {
     const themeBtn = document.getElementById('buttonSwitchTheme');
     if (!themeBtn) return;
 
-    function createSvgIcon(type) {
-        const svgNS = "http://www.w3.org/2000/svg";
-        const svg = document.createElementNS(svgNS, "svg");
-        svg.setAttribute("viewBox", "0 0 24 24");
-        svg.setAttribute("fill", "none");
-        svg.setAttribute("stroke", "currentColor");
-        svg.setAttribute("stroke-width", "2");
-        svg.setAttribute("stroke-linecap", "round");
-        svg.setAttribute("stroke-linejoin", "round");
-        if (type === 'sun') {
-            const circle = document.createElementNS(svgNS, "circle");
-            circle.setAttribute("cx", "12");
-            circle.setAttribute("cy", "12");
-            circle.setAttribute("r", "5");
-            svg.appendChild(circle);
-            const lines = [
-                [12,1,12,3], [12,21,12,23], [4.22,4.22,5.64,5.64],
-                [18.36,18.36,19.78,19.78], [1,12,3,12], [21,12,23,12],
-                [4.22,19.78,5.64,18.36], [18.36,5.64,19.78,4.22]
-            ];
-            lines.forEach(coords => {
-                const line = document.createElementNS(svgNS, "line");
-                line.setAttribute("x1", coords[0]);
-                line.setAttribute("y1", coords[1]);
-                line.setAttribute("x2", coords[2]);
-                line.setAttribute("y2", coords[3]);
-                svg.appendChild(line);
-            });
-        } else {
-            const path = document.createElementNS(svgNS, "path");
-            path.setAttribute("d", "M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z");
-            svg.appendChild(path);
-        }
-        return svg;
-    }
+    // SVG-шаблоны иконок (солнце и луна)
+    const icons = {
+        sun: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"/>
+                <line x1="12" y1="1" x2="12" y2="3"/>
+                <line x1="12" y1="21" x2="12" y2="23"/>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                <line x1="1" y1="12" x2="3" y2="12"/>
+                <line x1="21" y1="12" x2="23" y2="12"/>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+              </svg>`,
+        moon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                 <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+               </svg>`
+    };
 
-    function updateButtonIcon() {
+    // Обновление иконки кнопки в зависимости от темы
+    const updateIcon = () => {
         const isDark = document.body.classList.contains('themeDark');
-        const iconType = isDark ? 'moon' : 'sun';
-        themeBtn.innerHTML = '';
-        themeBtn.appendChild(createSvgIcon(iconType));
-    }
+        themeBtn.innerHTML = icons[isDark ? 'moon' : 'sun'];
+    };
 
-    // Применяем сохранённую тему
+    // Применяем сохранённую тему из localStorage
     if (localStorage.getItem('theme') === 'dark') {
         document.body.classList.add('themeDark');
-    } else {
-        document.body.classList.remove('themeDark');
     }
-    updateButtonIcon();
+    updateIcon();
 
-    // Обработчик клика – просто переключаем класс
+    // Переключение темы по клику
     themeBtn.addEventListener('click', () => {
         document.body.classList.toggle('themeDark');
-        const isDarkNow = document.body.classList.contains('themeDark');
-        localStorage.setItem('theme', isDarkNow ? 'dark' : 'light');
-        updateButtonIcon();
+        const isDark = document.body.classList.contains('themeDark');
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        updateIcon();
     });
 });

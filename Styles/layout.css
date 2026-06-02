@@ -1,61 +1,71 @@
-/* Файл HTML */
+/* Плавная прокрутка для всей страницы */
 html {
-    /* Прокрутка: плавная */
     scroll-behavior: smooth;
 }
 
-/* Тело */
-body { 
-    /* Шрифт: sans-serif - без засечек */
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* Цвет заднего фона */
-    background-color: var(--background-color);
-    /* Цвет текста */
-    color: var(--text-color);
-    /* Анимация */
-    transition: background-color 0.3s ease, color 0.3s ease;
+/* Корневые CSS-переменные (светлая тема по умолчанию) */
+:root {
+    --background-color: rgb(255, 255, 255);
+    --text-color: rgb(0, 0, 0);
+    --icon-color: rgb(0, 0, 0);
+    --link-color: #0066cc;
+    --link-hover-color: #004499;
+    --link-visited-color: #551a8b;
 }
 
-/* Модули или же заголовок нумерованного списка на странице */
+/* Тёмная тема */
+.themeDark {
+    --background-color: rgb(18, 18, 18);
+    --text-color: rgb(224, 224, 224);
+    --icon-color: rgb(255, 255, 255);
+    --link-color: #66b0ff;
+    --link-hover-color: #99ccff;
+    --link-visited-color: #c58af9;
+}
+
+/* Тело страницы */
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    /* Плавный переход при смене темы */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0;
+    padding: 20px;
+}
+
+/* ========== СПИСКИ ========== */
+
+/* Заголовки разделов (элементы ol) */
 ol > li {
-    /* Внешний отступ справа */
     margin-top: 1em;
-    /* Насыщенность шрифта */
     font-weight: bold;
 }
 
-/* Ненумерованный список */
+/* Вложенные списки без маркеров */
 ul {
-    /* Маркер */
     list-style: none;
-    /* Внутренний отступ слева */
     padding-left: 0;
+    margin: 0;
 }
 
-/* Абзац ненумерованного списка */
+/* Абзацы внутри ul */
 ul p {
-    /* Внешний отступ */
-    margin: 0px;
+    margin: 0;
 }
 
-/* Гиперссылка */
+/* ========== ССЫЛКИ ========== */
+
 a {
-    /* Цвет текста */
     color: var(--link-color);
-    /* Декорация */
     text-decoration: none;
-    /* Анимация */
     transition: color 0.2s ease;
 }
 
-/* Гиперссылка при наведении */
 a:hover {
-    /* Цвет */
     color: var(--link-hover-color);
 }
 
-/* Посещённая гиперссылка */
 a:visited {
-    /* Цвет */
     color: var(--link-visited-color);
 }
